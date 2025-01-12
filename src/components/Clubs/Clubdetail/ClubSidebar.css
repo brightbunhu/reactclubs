@@ -1,0 +1,145 @@
+/* Club Sidebar Styles */
+.club-sidebar {
+    background-color: #f4f4f4; /* Light background for contrast */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .leadership-box {
+    margin-bottom: 20px;
+  }
+  
+  .leadership-box h3 {
+    font-size: 20px;
+    color: #003366; /* MSU branding color */
+    margin-bottom: 15px;
+  }
+  
+  .leader-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .leader-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .leader-info h4 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .leader-info .role {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .leader-info .department {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .join-club {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .join-club h3 {
+    font-size: 20px;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .join-club p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .join-btn {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .join-btn:hover {
+    background-color: #ffc107; /* Highlight color */
+    color: #003366;
+  }
+  
+  .club-contact {
+    margin-top: 20px;
+  }
+  
+  .club-contact h3 {
+    font-size: 20px;
+    color: #003366;
+    margin-bottom: 15px;
+  }
+  
+  .club-contact p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .club-contact i {
+    color: #003366;
+    margin-right: 8px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    font-size: 18px;
+    color: #003366;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #ffc107; /* Highlight color */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .club-sidebar {
+      padding: 15px;
+    }
+  
+    .leader-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .leader-image {
+      margin-bottom: 10px;
+    }
+  
+    .join-btn {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  
+    .social-links a {
+      font-size: 16px;
+    }
+  }
+  

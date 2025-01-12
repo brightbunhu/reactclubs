@@ -1,0 +1,138 @@
+ /* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Light background for contrast */
+    color: #333; /* Default text color */
+  }
+  
+  /* Loading Spinner */
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #003366; /* MSU branding color */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Club Detail Page Layout */
+  .club-detail-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* Club Content Layout */
+  .club-content {
+    display: flex;
+    gap: 20px;
+    padding: 20px 40px;
+    flex: 1;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Main Section */
+  .club-main {
+    flex: 3;
+  }
+  
+  /* Sidebar */
+  .club-sidebar {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .club-sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #003366; /* MSU branding color */
+  }
+  
+  .club-sidebar p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .club-sidebar a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .club-sidebar a:hover {
+    color: #ffc107; /* Accent color */
+  }
+  
+  /* Club Header */
+  .club-header {
+    padding: 20px;
+    background-color: #003366; /* MSU branding color */
+    color: white;
+    text-align: center;
+  }
+  
+  .club-header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .club-header p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  /* Events Section */
+  .events-section {
+    margin-top: 20px;
+  }
+  
+  .event-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .club-content {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }
+  

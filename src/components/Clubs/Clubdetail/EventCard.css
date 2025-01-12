@@ -1,0 +1,118 @@
+/* Event Card Styles */
+.event-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-card.past {
+    background-color: #f8f9fa; /* Lighter background for past events */
+    opacity: 0.9;
+  }
+  
+  .event-date {
+    background-color: #003366; /* MSU branding color */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    min-width: 80px;
+    text-align: center;
+  }
+  
+  .event-date .day {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .event-date .month {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .event-details {
+    padding: 15px;
+    flex: 1;
+  }
+  
+  .event-details h3 {
+    font-size: 20px;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .event-desc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .event-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .event-meta span i {
+    color: #003366;
+    margin-right: 5px;
+  }
+  
+  .event-btn {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .event-btn:hover {
+    background-color: #ffc107; /* Highlight color */
+    color: #003366;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .event-card {
+      flex-direction: column;
+    }
+  
+    .event-date {
+      min-width: 100%;
+      padding: 10px;
+    }
+  
+    .event-details {
+      padding: 10px;
+    }
+  
+    .event-meta {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .event-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

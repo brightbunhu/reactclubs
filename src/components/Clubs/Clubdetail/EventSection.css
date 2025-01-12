@@ -1,0 +1,103 @@
+/* Events Section */
+.club-events {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .club-events h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .events-section {
+    margin-bottom: 30px;
+  }
+  
+  .events-section h3 {
+    font-size: 20px;
+    color: #003366;
+    margin-bottom: 15px;
+  }
+  
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .event-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-card.past {
+    background-color: #f1f1f1; /* Slightly darker for past events */
+    opacity: 0.9;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .event-info {
+    padding: 15px;
+  }
+  
+  .event-info h4 {
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .event-info .event-date,
+  .event-info .event-location {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .event-btn {
+    display: inline-block;
+    background-color: #003366;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .event-btn:hover {
+    background-color: #ffc107; /* Highlight color */
+    color: #003366;
+    text-decoration: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .events-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .event-card {
+      margin-bottom: 20px;
+    }
+  }
+  

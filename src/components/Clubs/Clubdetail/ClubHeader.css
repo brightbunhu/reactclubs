@@ -1,0 +1,108 @@
+/* Club Header Styles */
+.club-header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003366; /* MSU branding color */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .club-info {
+    flex: 2;
+  }
+  
+  .club-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .club-tagline {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-style: italic;
+  }
+  
+  .club-tags {
+    margin-bottom: 15px;
+  }
+  
+  .tag {
+    display: inline-block;
+    background-color: #ffc107; /* Highlight color */
+    color: #003366; /* Contrast text */
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px 5px 0 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .tag:hover {
+    background-color: #ffda79; /* Slightly lighter for hover effect */
+    transition: background-color 0.3s;
+  }
+  
+  .club-stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-value {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .stat-label {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Club Image Section */
+  .club-image {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .club-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .club-header-content {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .club-info {
+      margin-bottom: 20px;
+    }
+  
+    .club-title {
+      font-size: 24px;
+    }
+  
+    .stat-value {
+      font-size: 18px;
+    }
+  
+    .club-image {
+      max-width: 200px;
+    }
+  }
+  

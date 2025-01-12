@@ -1,0 +1,125 @@
+/* General Styles */
+.hero-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Heading Styles */
+  .hero-slider h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px; /* Adds space between heading and event boxes */
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Slider Container */
+  .slider-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 350px; /* Adjust height for better visibility */
+  }
+  
+  /* Individual Slide */
+  .slide {
+    flex: 0 0 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: scale(0.95); /* Slightly shrink inactive slides */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transform: scale(1); /* Highlight active slide */
+    z-index: 1;
+  }
+  
+  /* Event Image */
+  .event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures the image fits the box */
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Event Content */
+  .event-content {
+    background-color: white;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .event-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .event-content p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .event-date {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Navigation Buttons */
+  .slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+  .slider-nav.prev {
+    left: 10px;
+  }
+  
+  .slider-nav.next {
+    right: 10px;
+  }
+  
+  .slider-nav:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-slider h2 {
+      font-size: 1.5rem;
+    }
+  
+    .slider-container {
+      height: 300px;
+    }
+  
+    .event-content h3 {
+      font-size: 1rem;
+    }
+  
+    .event-content p {
+      font-size: 0.8rem;
+    }
+  }
+  
