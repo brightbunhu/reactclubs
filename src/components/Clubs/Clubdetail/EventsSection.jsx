@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import './Eventsection.css'
 
 const EventsSection = ({ events }) => {
   const upcomingEvents = events.filter(event => event.type === 'upcoming');
