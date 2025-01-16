@@ -1,5 +1,6 @@
 import React from 'react'
 import { useData } from '../../../context/DataContext';
+import './Upcomingevents.css'
 
 const Upcomingevents = () => {
   const { events } = useData();

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../../../context/DataContext';
+import './OurClubs.css'
 
 const OurClubs = () => {
   const { clubs } = useData();
